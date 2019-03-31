@@ -25,4 +25,4 @@ The chatting is based on markov chains and I dumped my entire message history in
 
 ## External dependencies
 
-I needed to fork [quora-api](https://github.com/CodeDotJS/quora-api) because it was no longer being developed and it was broken. The same thing I had to do with [nodejs-text-summarizer](https://github.com/anpandu/nodejs-text-summarizer) since there was some bug with its dependency.
+I had to fork [quora-api](https://github.com/CodeDotJS/quora-api) because it was no longer being developed and it was broken. The same thing I had to do with [nodejs-text-summarizer](https://github.com/anpandu/nodejs-text-summarizer) since there was some bug with its dependency.

@@ -1,0 +1,32 @@
+{
+  "name": "mage-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot to replace me in virtual context",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcholio/mage-bot.git"
+  },
+  "author": "Markus Tyrkkö",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marcholio/mage-bot/issues"
+  },
+  "homepage": "https://github.com/Marcholio/mage-bot#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "node-summary": "^1.2.0",
+    "nodejs-text-summarizer": "^2.0.3",
+    "quora-api": "^1.0.1",
+    "telebot": "^1.2.6",
+    "text-summary": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

@@ -16,7 +16,7 @@ let expectQuestion = false;
 const sendMessage = (chatId, msg) => {
   setTimeout(() => {
     bot.sendMessage(chatId, msg);
-  }, Math.random() * 1); // TODO: Reset delay
+  }, Math.random() * 5000);
 };
 
 bot.on("/ping", msg => {
@@ -24,9 +24,28 @@ bot.on("/ping", msg => {
 });
 
 bot.on("*", msg => {
-  if (msg.text.toLowerCase() === "margus") {
+  if (
+    msg.text.toLowerCase() === "margus" ||
+    msg.text.toLowerCase() === "/margus"
+  ) {
     sendMessage(msg.chat.id, "mnoh?");
     expectQuestion = true;
+  } else if (
+    [
+      "hello",
+      "moi",
+      "moro",
+      "hi",
+      "terve",
+      "whatsup",
+      "sup",
+      "morjes"
+    ].includes(msg.text.toLowerCase())
+  ) {
+    sendMessage(
+      msg.chat.id,
+      "Hi, I'm virtual clone of Markus. You can ask me anything by writing 'margus' and a question in the next message. Or we can also just chat :D"
+    );
   } else if (expectQuestion) {
     quora.answer(msg.text.split(" ").join("-")).then(answer => {
       if (typeof answer === "string" && answer !== "") {

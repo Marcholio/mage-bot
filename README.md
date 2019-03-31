@@ -11,6 +11,8 @@ The second function is the search, which is invoked by sending message "margus" 
 
 There is also help available by sending 'hi' or something similar to the bot.
 
+![alt text](example-usage.png)
+
 ## Why did it do this?
 
 Well, I have this one friend who always asks me questions about everything. I usually search the answer online and post it to him and I thought that I might just as well outsource this duty to a bot. Then I considered that I could actually outsource the entire conversation to the bot so that I wouldn't need to chat with people anymore, win/win :D
@@ -19,7 +21,7 @@ Well, I have this one friend who always asks me questions about everything. I us
 
 The search functionality is based on scraping results from Quora, therefore it does not exactly work quite well. The longest answer is then summarized with text summarizer and sent to the user.
 
-The chatting is based on markov chains and I dumped my entire message history including several thousand messages to create the model. The model itself is not included in GitHub for privacy purposes.
+The chatting is based on markov chains and I dumped my entire message history including several thousand messages to create the model. I used [telegram-history-dump](https://github.com/tvdstaaij/telegram-history-dump) for dumping the messages and a custom parser `parser.py` to parse the raw data. The model itself is not included in GitHub for privacy purposes.
 
 ## External dependencies
 

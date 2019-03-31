@@ -20,3 +20,7 @@ Well, I have this one friend who always asks me questions about everything. I us
 The search functionality is based on scraping results from Quora, therefore it does not exactly work quite well. The longest answer is then summarized with text summarizer and sent to the user.
 
 The chatting is based on markov chains and I dumped my entire message history including several thousand messages to create the model. The model itself is not included in GitHub for privacy purposes.
+
+## External dependencies
+
+I needed to fork [quora-api](https://github.com/CodeDotJS/quora-api) because it was no longer being developed and it was broken. The same thing I had to do with [nodejs-text-summarizer](https://github.com/anpandu/nodejs-text-summarizer) since there was some bug with its dependency.

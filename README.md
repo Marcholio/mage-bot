@@ -1,6 +1,6 @@
 # mage-bot
 
-This is my clone on Telegram. You can find it with nickname `@TyrkkomBot`. *NOTE* I'm experiencing some network issues at home and therefore the bot might not be able to connect to Telegram at all times. If this happens, please try again later.
+This is my clone on Telegram. You can find it with nickname `@TyrkkomBot`. **NOTE** I'm experiencing some network issues at home and therefore the bot might not be able to connect to Telegram at all times. If this happens, please try again later.
 
 ## What does it do?
 

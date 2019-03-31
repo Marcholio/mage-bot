@@ -27,7 +27,11 @@ bot.on("*", msg => {
   } else if (expectQuestion) {
     quora.answer(msg.text.split(" ").join("-")).then(answer => {
       if (answer !== "") {
-        sendMessage(msg.chat.id, summarizer(answer));
+        if (answer.length > 200) {
+          sendMessage(msg.chat.id, summarizer(answer));
+        } else {
+          sendMessage(msg.chat.id, answer);
+        }
       } else {
         sendMessage(msg.chat.id, "No tjaa-a");
       }

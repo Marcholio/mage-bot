@@ -1,9 +1,12 @@
 require("dotenv").config();
 
 const TelegramBot = require("telebot");
+const _ = require("lodash");
 
 const summarizer = require("./nodejs-text-summarizer");
 const quora = require("./quora-api");
+
+const data = require("./data/parsed.json");
 
 const bot = new TelegramBot({ token: process.env.BOT_TOKEN });
 bot.start();
@@ -39,6 +42,14 @@ bot.on("*", msg => {
 
     expectQuestion = false;
   } else {
-    sendMessage(msg.chat.id, "Install gentoo");
+    let message = _.sample(Object.keys(data));
+
+    let cur = message;
+    while (cur !== "--END--") {
+      cur = _.sample(data[cur]);
+      if (cur !== "--END--") message += ` ${cur}`;
+    }
+
+    sendMessage(msg.chat.id, message.toLowerCase());
   }
 });

@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Marcholio/mage-bot#readme",
   "dependencies": {
     "dotenv": "^7.0.0",
+    "lodash": "^4.17.11",
     "node-summary": "^1.2.0",
     "nodejs-text-summarizer": "^2.0.3",
     "quora-api": "^1.0.1",

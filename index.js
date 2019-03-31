@@ -26,7 +26,7 @@ bot.on("*", msg => {
     expectQuestion = true;
   } else if (expectQuestion) {
     quora.answer(msg.text.split(" ").join("-")).then(answer => {
-      if (answer !== "") {
+      if (typeof answer === "string" && answer !== "") {
         if (answer.length > 200) {
           sendMessage(msg.chat.id, summarizer(answer));
         } else {

@@ -7,7 +7,7 @@ This is my clone on Telegram. You can find it with nickname `@TyrkkomBot`. **NOT
 It has two functionalities, first of all it creates authentic chat messages based on my personal Telegram chat messages. It will answer to every message you send it by generating
 an authentic sentence that is most likely something that I could say.
 
-The second function is the search, which is invoked by sending message "margus" followed by another message with the question. The bot then sends a summarized answer to the question.
+The second function is the search, which is invoked by sending message "margus" followed by another message with the question. The bot then sends a summarized answer to the question. Due to backend logic, single words work better than full sentences.
 
 There is also help available by sending 'hi' or something similar to the bot.
 

@@ -1,6 +1,6 @@
 # mage-bot
 
-This is my clone on Telegram. You can find it with nickname `@TyrkkomBot`. **NOTE** I'm experiencing some network issues at home and therefore the bot might not be able to connect to Telegram at all times. If this happens, please try again later.
+This is my clone on Telegram. You can find it with nickname `@TyrkkomBot`. The purpose of the competition was to create extremely stupid and funny chatbots in 24 hours. My submission did not make it to top 3, but it was still fun to participate.
 
 ## What does it do?
 
